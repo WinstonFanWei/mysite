@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Taruscio, Domenica",
+        "value": 24,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+    {
+        "name": "Lochmüller, Hanns",
+        "value": 22
+    },
+    {
+        "name": "Baynam, Gareth",
+        "value": 20
+    },
+    {
+        "name": "Boycott, Kym M",
+        "value": 19
+    },
+    {
+        "name": "Drögemüller, Cord",
+        "value": 16
+    },
+    {
+        "name": "Santucci, Annalisa",
+        "value": 13
+    },
+    {
+        "name": "Zhang, Wei",
+        "value": 13
+    },
+    {
+        "name": "Li, Chen",
+        "value": 11
+    },
+    {
+        "name": "Robinson, Peter N",
+        "value": 11
+    },
+    {
+        "name": "Spiga, Ottavia",
+        "value": 11
+    },
+    {
+        "name": "Straub, Volker",
+        "value": 10
+    },
+    {
+        "name": "Thompson, Rachel",
+        "value": 10
+    },
+    {
+        "name": "Wang, Wei",
+        "value": 10
+    },
+    {
+        "name": "Riess, Olaf",
+        "value": 10
+    },
+    {
+        "name": "Hartley, Taila",
+        "value": 10
+    },
+    {
+        "name": "Stark, Zornitza",
+        "value": 9
+    },
+    {
+        "name": "Hoffmann, Georg F",
+        "value": 9
+    },
+    {
+        "name": "Berruti, Alfredo",
+        "value": 9
+    },
+    {
+        "name": "Li, Li",
+        "value": 9
+    },
+    {
+        "name": "Wang, Tao",
+        "value": 9
+    },
+    {
+        "name": "Zhang, Lei",
+        "value": 9
+    },
+    {
+        "name": "Graessner, Holm",
+        "value": 9
+    },
+    {
+        "name": "Cicaloni, Vittoria",
+        "value": 9
+    },
+    {
+        "name": "McKnight, Amy Jayne",
+        "value": 9
+    },
+    {
+        "name": "Rehm, Heidi L",
+        "value": 9
+    },
+    {
+        "name": "Roos, Marco",
+        "value": 9
+    },
+    {
+        "name": "Brudno, Michael",
+        "value": 9
+    },
+    {
+        "name": "Hamosh, Ada",
+        "value": 9
+    },
+    {
+        "name": "Rath, Ana",
+        "value": 9
+    }
+]

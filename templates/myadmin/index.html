@@ -1,0 +1,71 @@
+{% extends "myadmin/base.html" %}
+
+{% block main_body %}
+<section class="content container-fluid">
+
+  <!-- Small boxes (Stat box) -->
+  <div class="row">
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-aqua">
+        <div class="inner">
+          <h3>4人</h3>
+
+          <p>员工</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-bag"></i>
+        </div>
+        <a href="{% url 'myadmin_watchAdmins' 1 %}" class="small-box-footer">管理员工<i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-green">
+        <div class="inner">
+          <h3>191条</h3>
+
+          <p>新闻</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-stats-bars"></i>
+        </div>
+        <a href="{% url 'myadmin_watchNews' 1 %}" class="small-box-footer">管理新闻 <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-yellow">
+        <div class="inner">
+          <h3>3人</h3>
+
+          <p>用户</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-person-add"></i>
+        </div>
+        <a href="{% url 'myadmin_watchUsers' 1 %}" class="small-box-footer">管理用户 <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+      <!-- small box -->
+      <div class="small-box bg-red">
+        <div class="inner">
+          <h3>3类</h3>
+
+          <p>数据</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-pie-graph"></i>
+        </div>
+        <a href="#" class="small-box-footer">管理数据 <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+  </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "myapp/base.html" %}
+
+{% block myslider %}
+<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+    <div data-src="/static/myapp/images/sld3.jpg">  </div> 								           
+    <div data-src="/static/myapp/images/sld3.jpg">  </div> 
+</div>
+<div class="clear"> </div>
+{% endblock %}
+
+{% block mycontent %}
+<div class="top-grids">
+    <div class="wrap">
+         <div class="top-grid">
+             <a href="https://haokan.baidu.com/v?pd=wisenatural&vid=6056369453052478264" target="_blank"><img src="/static/myapp/images/logo1g.png" height="90" width="200" title="icon-name"></a>
+             <h3>罕见病医保药品谈判现灵魂砍价</h3>
+             <p>国家医保局谈判代表: "目标是一致的, 而且我们都不希望套路" "希望企业再努力" "我想你们再商量一下"...2021国家医保药品目录调整, 7种罕见病用药进入国家医保目录!</p>
+             <a class="button" href="https://haokan.baidu.com/v?pd=wisenatural&vid=6056369453052478264" target="_blank">观看视频</a>
+         </div>
+         <div class="top-grid">
+             <a href="https://m.thepaper.cn/baijiahao_13069090" target="_blank"><img src="/static/myapp/images/logo1g.png" height="90" width="200" title="icon-name"></a>
+             <h3>神经营养性角膜炎可被治愈!</h3>
+             <p>2021年5月29日, 东沛医药举办创新药物欧适维中国上市学术交流会, 打破了神经营养性角膜炎(NK)的治疗僵局, 使其成为临床可治愈的眼科罕见病.</p>
+             <a class="button" href="https://m.thepaper.cn/baijiahao_13069090" target="_blank">了解更多</a>
+         </div>
+         <div class="top-grid last-topgrid">
+             <a href="https://baijiahao.baidu.com/s?id=1724813079237108161&wfr=spider&for=pc" target="_blank"><img src="/static/myapp/images/logo1g.png" height="90" width="200" title="icon-name"></a>
+             <h3>山东大学齐鲁医院治愈臂丛神经炎</h3>
+             <p>日照十岁男孩右臂剧痛俩月余, 辗转多家医院未果, 日前在山东大学齐鲁医院(青岛)疑难罕见病中心确诊为臂丛神经炎,对症治疗后疼痛症状完全消失.</p>
+             <a class="button" href="https://baijiahao.baidu.com/s?id=1724813079237108161&wfr=spider&for=pc" target="_blank">阅读更多</a>
+         </div>
+         <div class="clear"> </div>
+    </div>
+</div>
+<!-- <div class="mid-grid">
+    <div class="wrap">
+        <h1>欢迎来到罕见病信息可视化网站</h1>
+        <h2>这里的罕见病信息多种多样, 希望您能在本站得到帮助.</h2>
+        <p>国家2021新文件中规定的罕见病有121种......</p>
+        <a class="button1" href="{% url 'info' %}">了解罕见病</a>
+    </div>
+</div> -->
+<div class="clear"> </div>
+<!--end-wrap--->
+</div>
+
+<script>
+    var cla = $("#_index").attr("class", "active");
+</script>
+{% endblock %}

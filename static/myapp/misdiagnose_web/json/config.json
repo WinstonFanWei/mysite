@@ -1,0 +1,52 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "/static/myapp/misdiagnose_web/json/data.json",
+  "logo": {
+    "file": "/static/myapp/images/mis_diagnose.jpeg",
+    "link": "https://www.cn-healthcare.com/article/20170414/content-491424.html",
+    "text": "误诊网络"
+  },
+  "text": {
+    "more": "由于误诊知识零散化、碎片化、缺乏关联，存在未知或潜在误诊关系，同时国内外的误诊知识存在较大差异，加之时间及精力的限制，海量的误诊文献资源反而对临床医生造成选择性困难，难以开采和发挥误诊文献的实用价值，为方便获取误诊信息，我们对医学误诊文献知识进行抽取和系统化整合，借助计算机技术将非结构化的文献数据转换为结构化的误诊关系数据，构建疾病误诊知识库，进行误诊信息抽取。疾病间的误诊关系可形式化记为A->B，其中A为被误诊疾病，B为误诊疾病。根据传递性，(A->B，B->C)推出A->C，表示A误诊为B，B误诊为C，则隐含地可推导出A将有可能误诊为C的结论。通过2个误诊关系传递，连接所得新的疾病误诊关系在此定义为二级疾病误诊关系。由此，综合所有的误诊关系信息，将其导入基于Java的开源软件Gephi 0.9.1，我们得以构建疾病误诊有向加权网络，并先后结合软件内置的FocrceAtlas 2及Yifan Hu比例算法进行网络整体布局。在网络中，各节点代表疾病实体，其大小以度为衡量指标进行缩放，因此节点越大，说明其所代表的疾病在误诊研究中越显重要。红色的节点代表罕见病，黑色节点则代表非罕见病。边权重以误诊知识库中的误诊次数为作为量化指标，进而调整边的粗细。进一步，由于疾病误诊网络为有向网络，节点度又可细分为出度及入度，根据这两个指标对各节点排序，可反映整体误诊网络中疾病的重要性程度。医生应对出入度较高的疾病引起的足够重视，审慎诊断。希望该网络能够为医生提供误诊研究的新思路与新发现，同时也对临床决策起到有效的辅助支持作用，提升诊断效率与效能。",
+    "title": "控制面板"
+  },
+  "legend": {
+    "edgeLabel": "边: 误诊关系",
+    "colorLabel": "",
+    "nodeLabel": "点: 病种"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "color",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": "Label"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 20,
+      "minEdgeSize": 0.5,
+      "minNodeSize": 0.5,
+      "maxNodeSize": 10
+    },
+    "mouseProperties": {
+      "maxRatio": 40,
+      "minRatio": 0.5
+    }
+  }
+}

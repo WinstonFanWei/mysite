@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sobue G",
+        "value": 154,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+    {"name": "Wirth B","value": 128},
+    {"name": "Mercuri E","value": 117},
+    {"name": "Muntoni F","value": 100},
+    {"name": "Katsuno M","value": 100},
+    {"name": "Lorson CL","value": 87},
+    {"name": "Fischbeck KH","value": 83},
+    {"name": "Swoboda KJ","value": 78},
+    {"name": "Burghes AH","value": 77},
+    {"name": "Zerres K","value": 73},
+    {"name": "Bertini E","value": 72},
+    {"name": "Montes J","value": 72},
+    {"name": "Darras BT","value": 70},
+    {"name": "Nishio H","value": 68},
+    {"name": "Rudnik-Schöneborn S","value": 67},
+    {"name": "De Vivo DC","value": 67},
+    {"name": "Gillingwater TH","value": 66},
+    {"name": "Adachi H","value": 61},
+    {"name": "Finkel RS","value": 58},
+    {"name": "van der Pol WL","value": 58},
+    {"name": "Pane M","value": 57},
+    {"name": "Iannaccone ST","value": 55},
+    {"name": "Tanaka F","value": 55},
+    {"name": "van den Berg LH","value": 54},
+    {"name": "Melki J","value": 54},
+    {"name": "Hausmanowa-Petrusewicz I","value": 54},
+    {"name": "Suzuki K","value": 53},
+    {"name": "Tizzano EF","value": 52},
+    {"name": "Prior TW","value": 51},
+    {"name": "Saito K","value": 49},
+    {"name": "Corti S","value": 49},
+    {"name": "Jong YJ","value": 47},
+    {"name": "Kothary R","value": 47},
+    {"name": "Banno H","value": 46},
+    {"name": "Crawford TO","value": 45},
+    {"name": "Sumner CJ","value": 45},
+    {"name": "Talbot K","value": 45},
+    {"name": "Messina S","value": 44},
+    {"name": "Wang H","value": 44},
+    {"name": "Androphy EJ","value": 44},
+    {"name": "Kirschner J","value": 43},
+    {"name": "Kissel JT","value": 42},
+    {"name": "Wang Y","value": 41},
+    {"name": "Davies KE","value": 41},
+    {"name": "Pellizzoni L","value": 41},
+    {"name": "Saito T","value": 40},
+    {"name": "Dreyfuss G","value": 40}
+    
+
+
+]
+
+

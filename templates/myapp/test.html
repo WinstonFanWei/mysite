@@ -1,0 +1,39 @@
+{% extends "myapp/base.html" %}
+
+{% block mycontent %}
+<div id="getdata">
+    <h1>getdata</h1>
+</div>
+<script>
+    var container = document.getElementById("getdata");
+    $.ajax({
+        type: "get",
+        url: "/static/myapp/json/htdwdb/1_cluster_source.json",
+        dataType: "json",
+        success: function (data) {
+            console.log(data["nodes"].length);
+            for (var num = 0; num < data["nodes"].length; num++){
+                for (i in data["nodes"]) {
+                    if (data["nodes"][i]["id"] == String(num)) {
+                        var text = document.createTextNode('"x":' + data["nodes"][i]["x"] + ',"y":' + data["nodes"][i]["y"] + ",");
+                        // var text = document.createTextNode(data["nodes"][i]["size"]);
+                        // if(data["nodes"][i]["label"][0] == "*"){
+                        //     var text = document.createTextNode(data["nodes"][i]["label"].substr(1));
+                        // }
+                        // else{
+                        //     var text = document.createTextNode(data["nodes"][i]["label"]);
+                        // };
+                        console.log(text);
+                        var div = document.createElement("div");
+                        div.appendChild(text);
+                        container.appendChild(div);
+                    }
+                }
+            }
+        },
+        error: function () {
+            console.log("请求失败");
+        },
+    });
+</script>
+{% endblock %}

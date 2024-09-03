@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Tabrizi SJ",
+        "value": 175,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+{"name": "Hayden MR","value": 109},
+{"name": "Paulsen JS","value": 106},
+{"name": "Stout JC","value": 94},
+{"name": "Roos RA","value": 87},
+{"name": "Leavitt BR","value": 83},
+{"name": "Durr A","value": 81},
+{"name": "Squitieri F","value": 76},
+{"name": "Reilmann R","value": 75},
+{"name": "Long JD","value": 70},
+{"name": "Scahill RI","value": 70},
+{"name": "Barker RA","value": 64},
+{"name": "Li S","value": 62},
+{"name": "Ross CA","value": 62},
+{"name": "Saft C","value": 60},
+{"name": "Wang Y","value": 59},
+{"name": "Zhang Y","value": 58},
+{"name": "Georgiou-Karistianis N","value": 57},
+{"name": "Bates GP","value": 57},
+{"name": "Roos RAC","value": 57},
+{"name": "Wang X","value": 54},
+{"name": "Landwehrmeyer GB","value": 53},
+{"name": "Morton AJ","value": 52},
+{"name": "Orth M","value": 51},
+{"name": "Wild EJ","value": 50},
+{"name": "Busse M","value": 46},
+{"name": "Rodrigues FB","value": 46},
+{"name": "Craufurd D","value": 45},
+{"name": "Hannan AJ","value": 44},
+{"name": "Shapiro JI","value": 44},
+{"name": "MacDonald ME","value": 44},
+{"name": "Liu J","value": 44},
+{"name": "Wang R","value": 42},
+{"name": "Li Y","value": 42},
+{"name": "Zhang H","value": 42},
+{"name": "Gusella JF","value": 41},
+{"name": "Li X","value": 41},
+{"name": "Sampaio C","value": 40},
+{"name": "Nguyen HP","value": 40}
+
+]

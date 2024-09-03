@@ -1,0 +1,26 @@
+[
+    {
+        "name": "王绿娅",
+        "value": 7,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+{"name": "杨娅","value": 5},
+{"name": "李治安","value": 3},
+{"name": "张小杉","value": 3},
+{"name": "赵水平","value": 3},
+{"name": "李威","value": 2},
+{"name": "关兆杰","value": 2},
+{"name": "张斌","value": 2},
+{"name": "哈斯","value": 2},
+{"name": "沈中阳","value": 2},
+{"name": "臧运金","value": 2},
+{"name": "杨臻峥","value": 2},
+{"name": "陆宗良,顼志敏","value": 2}
+]

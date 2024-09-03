@@ -1,0 +1,63 @@
+[
+    {
+        "name": "宋昉",
+        "value": 32,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+    {"name": "王柠","value": 31},
+    {"name": "陈万金","value": 28},
+    {"name": "瞿宇晋","value": 24},
+    {"name": "王红","value": 22},
+    {"name": "慕容慎行","value": 17},
+    {"name": "金煜炜","value": 17},
+    {"name": "曾健","value": 16},
+    {"name": "兰风华","value": 15},
+    {"name": "白晋丽","value": 15},
+    {"name": "林珉婷","value": 14},
+    {"name": "吴志英","value": 14},
+    {"name": "杨晓苏","value": 12},
+    {"name": "张成","value": 11},
+    {"name": "曹延延","value": 11},
+    {"name": "肖波","value": 9},
+    {"name": "何瑾","value": 9},
+    {"name": "张奇杰","value": 9},
+    {"name": "杨渤生","value": 9},
+    {"name": "苏峻峰","value": 8},
+    {"name": "黄梁浒","value": 8},
+    {"name": "孟英韬","value": 7},
+    {"name": "宋力","value": 6},
+    {"name": "郑德柱","value": 6},
+    {"name": "张文慧","value": 6},
+    {"name": "周水珍","value": 6},
+    {"name": "王艺","value": 6},
+    {"name": "李西华","value": 6},
+    {"name": "林翔","value": 6},
+    {"name": "黄尚志","value": 6},
+    {"name": "林宇","value": 6},
+    {"name": "章印红","value": 6},
+    {"name": "严爱贞","value": 6},
+    {"name": "王立文","value": 6},
+    {"name": "邹丽萍","value": 6},
+    {"name": "贺静","value": 6},
+    {"name": "朱宝生","value": 6},
+    {"name": "杨艳玲","value": 5},
+    {"name": "李亮","value": 5},
+    {"name": "龙美娟","value": 5},
+    {"name": "吴以岭","value": 5},
+    {"name": "柯龙凤","value": 5},
+    {"name": "张云茜","value": 5},
+    {"name": "林炎鸿","value": 5},
+    {"name": "陆瑛倩","value": 5},
+    {"name": "都娟","value": 5},
+    {"name": "唐新华","value": 5}
+    
+]
+
+

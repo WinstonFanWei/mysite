@@ -1,0 +1,422 @@
+[
+    {
+        "name": "张抒扬",
+        "value": 44,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+    {
+        "name": "黄世杰",
+        "value": 25
+    },
+    {
+        "name": "夏训明",
+        "value": 22
+    },
+    {
+        "name": "本刊编辑部",
+        "value": 21
+    },
+    {
+        "name": "弓孟春",
+        "value": 20
+    },
+    {
+        "name": "张波",
+        "value": 18
+    },
+    {
+        "name": "李梅",
+        "value": 17
+    },
+    {
+        "name": "刘鑫",
+        "value": 16
+    },
+    {
+        "name": "王剑",
+        "value": 15
+    },
+    {
+        "name": "胡善联",
+        "value": 14
+    },
+    {
+        "name": "马正",
+        "value": 14
+    },
+    {
+        "name": "张文",
+        "value": 14
+    },
+    {
+        "name": "王萍",
+        "value": 13
+    },
+    {
+        "name": "康琦",
+        "value": 13
+    },
+    {
+        "name": "王涛",
+        "value": 13
+    },
+    {
+        "name": "何江江",
+        "value": 12
+    },
+    {
+        "name": "李明",
+        "value": 12
+    },
+    {
+        "name": "朱惠娟",
+        "value": 12
+    },
+    {
+        "name": "郑晓瑛",
+        "value": 12
+    },
+    {
+        "name": "袁妮",
+        "value": 11
+    },
+    {
+        "name": "周文浩",
+        "value": 11
+    },
+    {
+        "name": "夏维波",
+        "value": 11
+    },
+    {
+        "name": "宋海",
+        "value": 11
+    },
+    {
+        "name": "王哲",
+        "value": 11
+    },
+    {
+        "name": "陈玲",
+        "value": 11
+    },
+    {
+        "name": "刘洋",
+        "value": 11
+    },
+    {
+        "name": "王静",
+        "value": 11
+    },
+    {
+        "name": "梅丹",
+        "value": 11
+    },
+    {
+        "name": "李强",
+        "value": 10
+    },
+    {
+        "name": "杨静",
+        "value": 10
+    },
+    {
+        "name": "张娟",
+        "value": 10
+    },
+    {
+        "name": "杨燕",
+        "value": 10
+    },
+    {
+        "name": "李建涛",
+        "value": 10
+    },
+    {
+        "name": "唐彦",
+        "value": 10
+    },
+    {
+        "name": "徐伟",
+        "value": 10
+    },
+    {
+        "name": "王勇",
+        "value": 10
+    },
+    {
+        "name": "李颖",
+        "value": 10
+    },
+    {
+        "name": "赵艺皓",
+        "value": 10
+    },
+    {
+        "name": "张伟",
+        "value": 10
+    },
+    {
+        "name": "潘锋",
+        "value": 9
+    },
+    {
+        "name": "张勇",
+        "value": 9
+    },
+    {
+        "name": "王鸥",
+        "value": 9
+    },
+    {
+        "name": "黄慧",
+        "value": 9
+    },
+    {
+        "name": "史录文",
+        "value": 9
+    },
+    {
+        "name": "李艳",
+        "value": 9
+    },
+    {
+        "name": "王芳",
+        "value": 9
+    },
+    {
+        "name": "王晓平",
+        "value": 9
+    },
+    {
+        "name": "张磊",
+        "value": 9
+    },
+    {
+        "name": "潘慧",
+        "value": 9
+    },
+    {
+        "name": "杨艳玲",
+        "value": 9
+    },
+    {
+        "name": "邢小平",
+        "value": 9
+    },
+    {
+        "name": "王任直",
+        "value": 9
+    },
+    {
+        "name": "陈永法",
+        "value": 9
+    },
+    {
+        "name": "李定国",
+        "value": 9
+    },
+    {
+        "name": "龚时薇",
+        "value": 9
+    },
+    {
+        "name": "杨悦",
+        "value": 9
+    },
+    {
+        "name": "高嘉敏",
+        "value": 8
+    },
+    {
+        "name": "刘磊",
+        "value": 8
+    },
+    {
+        "name": "赵志刚",
+        "value": 8
+    },
+    {
+        "name": "张宁",
+        "value": 8
+    },
+    {
+        "name": "王天有",
+        "value": 8
+    },
+    {
+        "name": "谢冰洁",
+        "value": 8
+    },
+    {
+        "name": "马楠",
+        "value": 8
+    },
+    {
+        "name": "张鹏霄",
+        "value": 8
+    },
+    {
+        "name": "冯时",
+        "value": 8
+    },
+    {
+        "name": "张燕",
+        "value": 8
+    },
+    {
+        "name": "陈超",
+        "value": 8
+    },
+    {
+        "name": "丁洁",
+        "value": 8
+    },
+    {
+        "name": "孙宇航",
+        "value": 8
+    },
+    {
+        "name": "吴晓明",
+        "value": 8
+    },
+    {
+        "name": "赵晓东",
+        "value": 8
+    },
+    {
+        "name": "詹思延",
+        "value": 8
+    },
+    {
+        "name": "张杰",
+        "value": 8
+    },
+    {
+        "name": "赵敏",
+        "value": 8
+    },
+    {
+        "name": "王敏",
+        "value": 8
+    },
+    {
+        "name": "李忱",
+        "value": 7
+    },
+    {
+        "name": "周静",
+        "value": 7
+    },
+    {
+        "name": "陈适",
+        "value": 7
+    },
+    {
+        "name": "刘畅",
+        "value": 7
+    },
+    {
+        "name": "张健",
+        "value": 7
+    },
+    {
+        "name": "常精华",
+        "value": 7
+    },
+    {
+        "name": "李剑",
+        "value": 7
+    },
+    {
+        "name": "张敏",
+        "value": 7
+    },
+    {
+        "name": "张方",
+        "value": 7
+    },
+    {
+        "name": "龚力",
+        "value": 7
+    },
+    {
+        "name": "李存江",
+        "value": 7
+    },
+    {
+        "name": "杨小东",
+        "value": 7
+    },
+    {
+        "name": "郭超",
+        "value": 7
+    },
+    {
+        "name": "方芳",
+        "value": 7
+    },
+    {
+        "name": "刘莉",
+        "value": 7
+    },
+    {
+        "name": "王飞",
+        "value": 7
+    },
+    {
+        "name": "杜冠华",
+        "value": 7
+    },
+    {
+        "name": "刘佳",
+        "value": 7
+    },
+    {
+        "name": "王淼",
+        "value": 7
+    },
+    {
+        "name": "刘立立",
+        "value": 7
+    },
+    {
+        "name": "李丹",
+        "value": 7
+    },
+    {
+        "name": "逯军",
+        "value": 7
+    },
+    {
+        "name": "周斌",
+        "value": 7
+    },
+    {
+        "name": "刘丽华",
+        "value": 7
+    },
+    {
+        "name": "李静",
+        "value": 7
+    },
+    {
+        "name": "刘爽",
+        "value": 7
+    },
+    {
+        "name": "田侃",
+        "value": 7
+    },
+    {
+        "name": "王刚",
+        "value": 7
+    }
+]

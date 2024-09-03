@@ -1,0 +1,86 @@
+{% extends "myadmin/base.html" %}
+
+{% block main_body %}
+<script>
+	var cla = $("#myadmin_news").attr("class", "active");
+</script>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+          新闻管理
+          <small>罕见病信息后台管理</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="{% url 'myadmin_index' %}"><i class="fa fa-dashboard"></i> 首页</a></li>
+          <li class="active">新闻管理</li>
+        </ol>
+      </section>
+  
+      <!-- Main content -->
+      <section class="content container-fluid">
+  
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">新闻信息表</h3>
+  
+                <div class="box-tools">
+                    <form action="{% url 'myadmin_watchNews' 1 %}" method="get">
+                        <div class="input-group input-group-sm" style="width:150px;">
+                          <input type="text" name="keyword" class="form-control pull-right" placeholder="标题/来源">
+        
+                          <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+                  <tr>
+                    <th>ID</th>
+                    <th>图片</th>
+                    <th>标题</th>
+                    <th>来源</th>
+                    <th>新闻时间</th>
+                  </tr>
+                  {% for news in newslist %}
+                  <tr>
+                    <td>{{ news.newsID }}</td>
+                    <td><img style="height:40px" src="{{news.image_src}}"></td>
+                    <td>{{ news.title }}</td>
+                    <td>{{ news.source }}</td>
+                    <td>{{ news.show_time }}</td>
+                    <td>
+                      <a type="button" href="{% url 'myadmin_edit' news.newsID %}" class="btn btn-success btn-xs">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 编辑</a>
+                      <a type="button" href="{{news.web_site}}" target="_blank" class="btn btn-warning btn-xs">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查看新闻</a>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+                <a role="button" href="{% url 'myadmin_addNews' %}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添加新闻</a>
+                <ul class="pagination pagination-sm no-margin pull-right">
+                  <li><a href="{% url 'myadmin_watchNews' pIndex|add:-1 %}?{{mywhere|join:'&'}}">&laquo;</a></li>
+                  {% for p in plist %}
+                  <li {% if p == pIndex %}class="active"{% endif %}><a href="{% url 'myadmin_watchNews' p %}?{{mywhere|join:'&'}}">{{p}}</a></li>
+                  {% endfor %}
+                  <li><a href="{% url 'myadmin_watchNews' pIndex|add:1 %}?{{mywhere|join:'&'}}">&raquo;</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+        </div>
+  
+      </section>
+      <!-- /.content -->
+{% endblock %}

@@ -1,0 +1,1864 @@
+{% extends "myapp/base.html" %}
+
+{% block mycontent %}
+<script>
+	var cla = $("#_info").attr("class", "active");
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/static/myapp/js/echarts.min.js"></script>
+	<style>
+		.text {
+			float: left;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		#main1 {
+			float: left;
+		}
+
+		#main2 {
+			float: left;
+		}
+
+		#main3 {
+			float: left;
+		}
+
+		#main4 {
+			float: left;
+		}
+
+		#main5 {
+			float: left;
+		}
+
+		#main6 {
+			float: left;
+		}
+
+		#main7 {
+			float: left;
+		}
+
+		#main8 {
+			float: left;
+		}
+
+		#main9 {
+			float: left;
+		}
+
+		#main10 {
+			float: left;
+		}
+
+		#main11 {
+			float: left;
+		}
+
+		#main12 {
+			float: left;
+		}
+
+		#main13 {
+			float: left;
+		}
+
+		#infoimg1 {
+			float: left;
+		}
+
+		#infoimg2 {
+			float: left;
+		}
+	</style>
+	<style type="text/css">
+		h1 {
+			display: block;
+			font-size: 2em;
+			margin-block-start: 0em;
+			margin-block-end: 0.67em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+		}
+
+		div {
+			display: block;
+		}
+
+		table {
+			display: table;
+			border-collapse: separate;
+			box-sizing: border-box;
+			text-indent: initial;
+			white-space: normal;
+			line-height: normal;
+			font-weight: normal;
+			font-size: medium;
+			font-style: normal;
+			color: -internal-quirk-inherit;
+			text-align: start;
+			border-spacing: 10px;
+			border-color: grey;
+			font-variant: normal;
+		}
+
+		tbody {
+			display: table-row-group;
+			vertical-align: middle;
+			border-color: inherit;
+		}
+
+		tr {
+			display: table-row;
+			vertical-align: inherit;
+			border-color: inherit;
+		}
+
+		th {
+			display: table-cell;
+			vertical-align: inherit;
+			font-weight: bold;
+			text-align: -internal-center;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		b {
+			font-weight: bold;
+		}
+
+		body {
+			background: #F1EDE4;
+		}
+	</style>
+	<title>Document</title>
+	<style>
+		body.model1 {
+			margin: 0;
+		}
+
+		ul.model1 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 10%;
+			background-color: #F1EDE4;
+			position: fixed;
+			height: 57%;
+			overflow: auto;
+		}
+
+		li a {
+			display: block;
+			color: #000;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+
+		li a.active1 {
+			background-color: burlywood;
+			color: white;
+		}
+
+		.a_towhere {
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		.model1 li a:hover:not(.active1) {
+			background-color: #555;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 侧边栏 -->
+	<ul class="model1" style="border-width: 1px 1px 1px 0; border-style: solid; border-color: red;">
+		<li class="model1"><a class="a_towhere" href="#hanjianbinggainian">1.罕见病概念</a></li>
+		<li class="model1"><a class="a_towhere" href="#wenxianyanjiushunping">2.文献研究水平</a></li>
+		<li class="model1"><a class="a_towhere" href="#Top25">3.前沿研究热点变化</a></li>
+		<li class="model1"><a class="a_towhere" href="#gueryao">4.孤儿药</a></li>
+		<li class="model1"><a class="a_towhere" href="#xiangguanzhengce">5.相关政策</a></li>
+		<li class="model1"><a class="a_towhere" href="#guojihanjianbingrilicheng">6.国际罕见病日</a></li>
+		<li class="model1"><a class="a_towhere" href="#guanzhuhanjianbing">7.关注罕见病</a></li>
+	</ul>
+	<!-- 罕见病概念 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<h1 id="hanjianbinggainian">罕见病概念</h1>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							罕见病，指那些发病率极低的疾病。罕见疾病又称“孤儿病”，在中国没有明确的定义。根据世界卫生组织（WHO）的定义，罕见病为患病人数占总人口的0.65‰～1‰的疾病。世界各国根据自己国家的具体情况，对罕见病的认定标准存在一定的差异。例如，美国将罕见病定义为每年患病人数少于20万人（或发病人口比例小于1/1500）的疾病；日本规定，罕见病为患病人数少于5万（或发病人口比例为1/2500）的疾病，中国台湾则以万分之一以下的发病率作为罕见病的标准。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2019年2月，国家卫生健康委宣布建立全国罕见病诊疗协作网，以加强中国罕见病管理，提高罕见病诊疗水平。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							截至2022年2月，全球已知的罕见病有7000多种。中国有2000多万罕见病患者，每年新增患者超20万。</span></span></span></span>
+		</p>
+		<!-- <p> 
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							</span></span></span></span>
+		</p> -->
+	</div>
+	</br>
+	<!-- 文献研究水平 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<h1 id="wenxianyanjiushunping">文献研究水平</h1>
+	</div>
+
+	<!-- bar-race -->
+	<div style="margin-left:10%;padding:1px 16px;text-align: center;"><a href="bar_race?name=all" target="_blank">
+			<h3 style="font-weight: bold; font-size: 25px;">各国罕见病文献数量动态展示</h3>
+		</a></div>
+	<div id="bar-race" style="margin-left:10%;padding:1px 16px; height:700px;"></div>
+	<script type="text/javascript">
+		var dom_b = document.getElementById("bar-race");
+		var myChart_b = echarts.init(dom_b);
+		var app_b = {};
+		var option_b;
+		const updateFrequency = 2000;
+		const dimension = 0;
+		const countryColors = {
+			USA: '#6A0888',
+			CHINA: '#ff0000',
+			ITALY: '#ffffff',
+			FRANCE: '#0000ff',
+			JAPAN: '#585858',
+			GERMANY: '#088A29',
+			INDIA: '#4C0B5F',
+			KOREA: '#FFFF00',
+			SPAIN: '#81F7F3',
+			TURKEY: '#045FB4',
+			CANADA: '#0A2A22',
+			AUSTRALIA: '#FE2EF7',
+			SWITZERLAND: '#424242',
+			"THE NETHERLANDS": '#F5A9A9',
+			BRAZIL: '#FF00BF'
+		};
+		$.when(
+			$.getJSON('/static/myapp/json/data.json'),
+			$.getJSON('/static/myapp/json/ALL/artnum.json')
+		).done(function (res0, res1) {
+			const flags = res0[0];
+			const data = res1[0];
+			const years = [];
+			for (let i = 0; i < data.length; ++i) {
+				if (years.length === 0 || years[years.length - 1] !== data[i][4]) {
+					years.push(data[i][4]);
+				}
+			}
+			/*   console.log(years); */
+			function getFlag(countryName) {
+				if (!countryName) {
+					return '';
+				}
+				return (
+					flags.find(function (item) {
+						return item.name === countryName;
+					}) || {}
+				).emoji;
+			}
+			let startIndex = 1;
+			let startYear = years[startIndex];
+			option_b = {
+				grid: {
+					top: 10,
+					bottom: 30,
+					left: 150,
+					right: 80
+				},
+				xAxis: {
+					max: 'dataMax',
+					axisLabel: {
+						formatter: function (n) {
+							return Math.round(n) + '';
+						}
+					}
+				},
+				dataset: {
+					source: data.slice(1).filter(function (d) {
+						return d[4] === startYear;
+					})
+				},
+				yAxis: {
+					type: 'category',
+					inverse: true,
+					max: 9, // top10
+					axisLabel: {
+						show: true,
+						fontSize: 14,
+						formatter: function (value) {
+							return value + '{flag|' + getFlag(value) + '}';
+						},
+						rich: {
+							flag: {
+								fontSize: 25,
+								padding: 5
+							}
+						}
+					},
+					animationDuration: 300,
+					animationDurationUpdate: 300
+				},
+				series: [
+					{
+						realtimeSort: true,
+						seriesLayoutBy: 'column',
+						type: 'bar',
+						itemStyle: {
+							color: function (param) {
+								return countryColors[param.value[3]] || '#5470c6';
+							}
+						},
+						encode: {
+							x: dimension,
+							y: 3
+						},
+						label: {
+							show: true,
+							precision: 1,
+							position: 'right',
+							valueAnimation: true,
+							fontFamily: 'monospace'
+						}
+					}
+				],
+				// Disable init animation.
+				animationDuration: 0,
+				animationDurationUpdate: updateFrequency,
+				animationEasing: 'linear',
+				animationEasingUpdate: 'linear',
+				graphic: {
+					elements: [
+						{
+							type: 'text',
+							right: 160,
+							bottom: 60,
+							style: {
+								text: startYear,
+								font: 'bolder 80px monospace',
+								fill: 'rgba(100, 100, 100, 0.25)'
+							},
+							z: 100
+						}
+					]
+				}
+			};
+			myChart_b.setOption(option_b);
+			for (let i = startIndex; i < years.length - 1; ++i) {
+				(function (i) {
+					setTimeout(function () {
+						updateYear(years[i + 1]);
+					}, (i - startIndex) * updateFrequency);
+				})(i);
+			}
+			function updateYear(year) {
+				let source = data.slice(1).filter(function (d) {
+					return d[4] === year;
+				});
+				option_b.series[0].data = source;
+				option_b.graphic.elements[0].style.text = year;
+				myChart_b.setOption(option_b);
+			}
+		});
+
+		if (option_b && typeof option_b === 'object') {
+			myChart_b.setOption(option_b);
+		}
+	</script>
+
+	<div style="margin-left:10%;margin-top: 30px;padding:1px 16px;height:auto;">
+		<div class="text" style="width: 49%;font-size: 18;">
+			<a href="linechart?name=all_civil" target="_blank">
+				<h3 style="font-weight: bold; margin-bottom: 10px;">我国文献数量变化折线图</h3>
+			</a>
+		</div>
+		<div class="text" style="width: 49%;font-size: 18;">
+			<a href="SectorGraph?name=all_international" target="_blank">
+				<h3 style="font-weight: bold; margin-bottom: 10px;">TOP-5国家罕见病文献比例</h3>
+			</a>
+		</div>
+		<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+		<div id="main7" style="width: 49%;height:300px;">
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var chartDom7 = document.getElementById('main7');
+				var myChart7 = echarts.init(chartDom7);
+				var option7;
+				$.ajax({
+					type: "get",
+					url: "/static/myapp/json/ALL/art_num_linechart.json",
+					dataType: "json",
+					success: function (data) {
+						option7 = {
+							title: {
+								text: '',
+								left: 'center',
+								textStyle: {
+									fontSize: 16
+								}
+							},
+							tooltip: {
+								trigger: 'axis',
+								axisPointer: {
+									type: 'cross',
+									crossStyle: {
+										color: '#999'
+									}
+								}
+							},
+							toolbox: {
+								feature: {
+									dataView: { show: true, readOnly: false },
+									magicType: { show: true, type: ['line', 'bar'] },
+									restore: { show: true },
+									saveAsImage: { show: true }
+								}
+							},
+							legend: {
+								data: data["name"],
+								top: 'top'
+							},
+							xAxis: [
+								{
+									type: 'category',
+									data: data["time"],
+									axisPointer: {
+										type: 'shadow'
+									}
+								}
+							],
+							yAxis: [
+								{
+									type: 'value',
+									name: '数量',
+									min: data["bar_min"],
+									max: data["bar_max"],
+									interval: data["bar_interval"],
+									axisLabel: {
+										formatter: '{value} 个'
+									}
+								},
+								{
+									type: 'value',
+									name: '比例',
+									tooltip: {
+										valueFormatter: function (value) {
+											return value + ' %';
+										}
+									},
+									min: data["line_min"],
+									max: data["line_max"],
+									interval: data["line_interval"],
+									axisLabel: {
+										formatter: '{value} %'
+									}
+								}
+							],
+							series: [
+								{
+									name: data["name"][0],
+									type: 'bar',
+									tooltip: {
+										valueFormatter: function (value) {
+											return value + ' 个';
+										}
+									},
+									data: data["bar_data"]
+									// [
+									// 	6, 11, 13, 9, 17, 21, 9, 18, 34, 21, 31
+									// ]
+								},
+								{
+									name: data["name"][1],
+									type: 'line',
+									yAxisIndex: 1,
+									tooltip: {
+										valueFormatter: function (value) {
+											return value + '%';
+										}
+									},
+									data: data["line_data"]
+									// [28.6, 36.7, 33.3, 33.3, 41.5, 46.7, 40.9, 39.1, 60.7, 43.8, 58.5]
+								}
+							]
+						};
+						option7 && myChart7.setOption(option7);
+					},
+					error: function () {
+						console.log("请求失败");
+					},
+				});
+			</script>
+		</div>
+		<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+		<div id="main8" style="width: 49%;height:300px;">
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var chartDom8 = document.getElementById('main8');
+				var myChart8 = echarts.init(chartDom8);
+				var option8;
+				$.ajax({
+					type: "get",
+					url: "/static/myapp/json/ALL/all_SectorGraph.json",
+					dataType: "json",
+					success: function (data) {
+						option8 = {
+							tooltip: {
+								trigger: 'item'
+							},
+							legend: {
+								top: '5%',
+								left: 'center'
+							},
+							series: [
+								{
+									name: 'Access From',
+									type: 'pie',
+									radius: ['40%', '70%'],
+									avoidLabelOverlap: false,
+									itemStyle: {
+										borderRadius: 10,
+										borderColor: '#fff',
+										borderWidth: 2
+									},
+									label: {
+										show: false,
+										position: 'center'
+									},
+									emphasis: {
+										label: {
+											show: true,
+											fontSize: '40',
+											fontWeight: 'bold'
+										}
+									},
+									labelLine: {
+										show: false
+									},
+									data: data
+									// [
+									// 	{ value: 1048, name: 'Search Engine' },
+									// 	{ value: 735, name: 'Direct' },
+									// 	{ value: 580, name: 'Email' },
+									// 	{ value: 484, name: 'Union Ads' },
+									// 	{ value: 300, name: 'Video Ads' }
+									// ]
+								}
+							]
+						};
+						option8 && myChart8.setOption(option8);
+					},
+					error: function () {
+						console.log("请求失败");
+					},
+				});
+			</script>
+		</div>
+		<div class="text" style="width: 49%;font-size: 18;"><a href="cluster?name=all_civil" target="_blank">
+				<h3 style="font-weight: bold; margin-bottom: 10px;">我国文献主题联系图</h3>
+			</a></div>
+		<div class="text" style="width: 49%;font-size: 18;"><a href="cluster?name=all_international" target="_blank">
+				<h3 style="font-weight: bold; margin-bottom: 10px;">全球文献主题联系图</h3>
+			</a></div>
+		<div id="main10" style="width: 49%;height:450px;margin-right: 5px;">
+			<script type="text/javascript" src="/static/myapp/js/jquery.min.js"></script>
+			<script type="text/javascript" src="/static/myapp/js/echarts.min.js"></script>
+			<!-- Uncomment this line if you want to dataTool extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/extension/dataTool.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to use gl extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to echarts-stat extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to use map
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/map/js/china.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/map/js/world.js"></script>
+        -->
+			<!-- Uncomment these two lines if you want to use bmap extension
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=<Your Key Here>"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@{{version}}/dist/extension/bmap.min.js"></script>
+        -->
+			<script type="text/javascript">
+				var dom10 = document.getElementById("main10");
+				var myChart10 = echarts.init(dom10);
+				var app10 = {};
+				var option10;
+				myChart10.showLoading();
+				$.getJSON('/static/myapp/json/ALL/all_civil.json', function (graph) {
+					myChart10.hideLoading();
+					option10 = {
+						tooltip: {},
+						legend: [
+							{
+								data: graph.categories.map(function (a) {
+									return a.name;
+								})
+							}
+						],
+						series: [
+							{
+								name: '关键词',
+								type: 'graph',
+								layout: 'none',
+								data: graph.nodes,
+								links: graph.links,
+								categories: graph.categories,
+								roam: true,
+								label: {
+									show: false,
+									position: 'right',
+									formatter: '{b}'
+								},
+								labelLayout: {
+									hideOverlap: true
+								},
+								scaleLimit: {
+									min: 0.4,
+									max: 10
+								},
+								lineStyle: {
+									color: 'source',
+									curveness: 0
+								}
+							}
+						]
+					};
+					myChart10.setOption(option10);
+				});
+
+				if (option10 && typeof option10 === 'object') {
+					myChart10.setOption(option10);
+				}
+
+			</script>
+		</div>
+		<div id="main11" style="width: 49%;height:450px;">
+			<script type="text/javascript" src="/static/myapp/js/jquery.min.js"></script>
+			<script type="text/javascript" src="/static/myapp/js/echarts.min.js"></script>
+			<!-- Uncomment this line if you want to dataTool extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/extension/dataTool.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to use gl extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to echarts-stat extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+        -->
+			<!-- Uncomment this line if you want to use map
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/map/js/china.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/map/js/world.js"></script>
+        -->
+			<!-- Uncomment these two lines if you want to use bmap extension
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=<Your Key Here>"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@{{version}}/dist/extension/bmap.min.js"></script>
+        -->
+			<script type="text/javascript">
+				var dom11 = document.getElementById("main11");
+				var myChart11 = echarts.init(dom11);
+				var app11 = {};
+				var option11;
+				myChart11.showLoading();
+				$.getJSON('/static/myapp/json/ALL/all_international.json', function (graph) {
+					myChart11.hideLoading();
+					option11 = {
+						tooltip: {},
+						legend: [
+							{
+								data: graph.categories.map(function (a) {
+									return a.name;
+								})
+							}
+						],
+						series: [
+							{
+								name: '关键词',
+								type: 'graph',
+								layout: 'none',
+								data: graph.nodes,
+								links: graph.links,
+								categories: graph.categories,
+								roam: true,
+								label: {
+									show: false,
+									position: 'right',
+									formatter: '{b}'
+								},
+								labelLayout: {
+									hideOverlap: true
+								},
+								scaleLimit: {
+									min: 0.4,
+									max: 10
+								},
+								lineStyle: {
+									color: 'source',
+									curveness: 0
+								}
+							}
+						]
+					};
+					myChart11.setOption(option11);
+				});
+
+				if (option11 && typeof option11 === 'object') {
+					myChart11.setOption(option11);
+				}
+			</script>
+		</div>
+		<div class="text" style="width: 49%;font-size: 18;"><a href="wordcloud?name=word_all_civil" target="_blank">
+				<h3 style="font-weight: bold;">我国文献作者贡献图</h3>
+			</a></div>
+		<div class="text" style="width: 49%;font-size: 18;"><a href="wordcloud?name=word_all_international"
+				target="_blank">
+				<h3 style="font-weight: bold;">全球文献作者贡献图</h3>
+			</a></div>
+		<div id="main12" style="width: 49%;height:450px;margin-right: 5px;">
+			<script src='/static/myapp/js/echarts.min.js'></script>
+			<!-- <script src="../../echarts/dist/echarts.js"></script> -->
+			<script src='/static/myapp/wordcloud/dist/echarts-wordcloud.js'></script>
+			<!-- <style>
+				#main12 {
+					width: 100%;
+					height: 100%;
+					margin: 0;
+				}
+			</style> -->
+			<script>
+				var chart12 = echarts.init(document.getElementById('main12'));
+				$.ajax({
+					type: "get",
+					url: "/static/myapp/json/ALL/word_all_civil.json",
+					dataType: "json",
+					success: function (data) {
+						var option12 = {
+							tooltip: {},
+							series: [{
+								type: 'wordCloud',
+								gridSize: 9,
+								sizeRange: [12, 50],
+								rotationRange: [-90, 90],
+								shape: 'pentagon',
+								width: 600,
+								height: 400,
+								drawOutOfBound: true,
+								textStyle: {
+									color: function () {
+										return 'rgb(' + [
+											Math.round(Math.random() * 160),
+											Math.round(Math.random() * 160),
+											Math.round(Math.random() * 160)
+										].join(',') + ')';
+									}
+								},
+								emphasis: {
+									textStyle: {
+										shadowBlur: 10,
+										shadowColor: '#333'
+									}
+								},
+								data: data
+							}]
+						};
+						chart12.setOption(option12);
+
+						window.onresize = chart12.resize;
+					},
+					error: function () {
+						console.log("请求失败");
+					},
+				});
+			</script>
+		</div>
+		<div id="main13" style="width: 49%;height:450px;margin-right: 5px;">
+			<script src='/static/myapp/js/echarts.min.js'></script>
+			<!-- <script src="../../echarts/dist/echarts.js"></script> -->
+			<script src='/static/myapp/wordcloud/dist/echarts-wordcloud.js'></script>
+			<!-- <style>
+				#main12 {
+					width: 100%;
+					height: 100%;
+					margin: 0;
+				}
+			</style> -->
+			<script>
+				var chart13 = echarts.init(document.getElementById('main13'));
+				$.ajax({
+					type: "get",
+					url: "/static/myapp/json/ALL/word_all_international.json",
+					dataType: "json",
+					success: function (data) {
+						var option13 = {
+							tooltip: {},
+							series: [{
+								type: 'wordCloud',
+								gridSize: 9,
+								sizeRange: [12, 50],
+								rotationRange: [-90, 90],
+								shape: 'pentagon',
+								width: 600,
+								height: 400,
+								drawOutOfBound: true,
+								textStyle: {
+									color: function () {
+										return 'rgb(' + [
+											Math.round(Math.random() * 160),
+											Math.round(Math.random() * 160),
+											Math.round(Math.random() * 160)
+										].join(',') + ')';
+									}
+								},
+								emphasis: {
+									textStyle: {
+										shadowBlur: 10,
+										shadowColor: '#333'
+									}
+								},
+								data: data
+							}]
+						};
+						chart13.setOption(option13);
+
+						window.onresize = chart13.resize;
+					},
+					error: function () {
+						console.log("请求失败");
+					},
+				});
+			</script>
+		</div>
+	</div>
+	<!-- 1300px -->
+	<div class="clear"></div>
+	<!-- 二十五个高频词 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<div class="clear"></div>
+		<h1 id="Top25" style="margin-top: 10px;">Top25前沿研究热点变化图</h1>
+	</div>
+
+	<html>
+
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<title>View Citation Burst History</title>
+
+	<body>
+		<div align=center>
+			<h1>Top 25 Keywords with the Strongest Citation Bursts</h1>
+			<table>
+				<th>Keywords</th>
+				<th>Year</th>
+				<th>Strength</th>
+				<th>Begin</th>
+				<th>End</th>
+				<th>2012 - 2022</th>
+				<tr>
+					<td>肾脏科</td>
+					<td>2012</td>
+					<td align=right>7.82</td>
+					<td><b>2012</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>罕用药</td>
+					<td>2012</td>
+					<td align=right>5.35</td>
+					<td><b>2012</b></td>
+					<td>2015</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>少见病</td>
+					<td>2012</td>
+					<td align=right>4.29</td>
+					<td><b>2012</b></td>
+					<td>2013</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>临床分析</td>
+					<td>2012</td>
+					<td align=right>3.99</td>
+					<td><b>2012</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>肺栓塞</td>
+					<td>2012</td>
+					<td align=right>3.54</td>
+					<td><b>2012</b></td>
+					<td>2016</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>误诊</td>
+					<td>2012</td>
+					<td align=right>3.4</td>
+					<td><b>2012</b></td>
+					<td>2012</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>外科治疗</td>
+					<td>2012</td>
+					<td align=right>3.27</td>
+					<td><b>2012</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>超声检查</td>
+					<td>2012</td>
+					<td align=right>3.24</td>
+					<td><b>2012</b></td>
+					<td>2016</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7"></span><span
+							style="color:#FF0000">▃▃▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>疑难病</td>
+					<td>2012</td>
+					<td align=right>3.74</td>
+					<td><b>2013</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>冰桶挑战</td>
+					<td>2012</td>
+					<td align=right>16.61</td>
+					<td><b>2014</b></td>
+					<td>2015</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>渐冻人</td>
+					<td>2012</td>
+					<td align=right>4.83</td>
+					<td><b>2014</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂</span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>专家述评</td>
+					<td>2012</td>
+					<td align=right>3.62</td>
+					<td><b>2014</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂</span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>罕见疾病</td>
+					<td>2012</td>
+					<td align=right>3.01</td>
+					<td><b>2014</b></td>
+					<td>2014</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂</span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>不良反应</td>
+					<td>2012</td>
+					<td align=right>5.5</td>
+					<td><b>2015</b></td>
+					<td>2017</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂</span><span
+							style="color:#FF0000">▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>医学论文</td>
+					<td>2012</td>
+					<td align=right>4.65</td>
+					<td><b>2015</b></td>
+					<td>2017</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂</span><span
+							style="color:#FF0000">▃▃▃</span><span style="color:#46C7C7">▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>精准医学</td>
+					<td>2012</td>
+					<td align=right>7.33</td>
+					<td><b>2016</b></td>
+					<td>2017</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>孤儿药</td>
+					<td>2012</td>
+					<td align=right>6.45</td>
+					<td><b>2017</b></td>
+					<td>2017</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂</span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>基因突变</td>
+					<td>2012</td>
+					<td align=right>4.39</td>
+					<td><b>2017</b></td>
+					<td>2018</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>卫生健康</td>
+					<td>2012</td>
+					<td align=right>3.99</td>
+					<td><b>2018</b></td>
+					<td>2019</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>医保目录</td>
+					<td>2012</td>
+					<td align=right>4.65</td>
+					<td><b>2019</b></td>
+					<td>2022</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃▃▃</span></td>
+				</tr>
+				<tr>
+					<td>增值税</td>
+					<td>2012</td>
+					<td align=right>4.32</td>
+					<td><b>2019</b></td>
+					<td>2019</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃</span><span style="color:#46C7C7">▂▂▂</span></td>
+				</tr>
+				<tr>
+					<td>可及性</td>
+					<td>2012</td>
+					<td align=right>4.26</td>
+					<td><b>2019</b></td>
+					<td>2022</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃▃▃</span></td>
+				</tr>
+				<tr>
+					<td>专家共识</td>
+					<td>2012</td>
+					<td align=right>3.65</td>
+					<td><b>2019</b></td>
+					<td>2022</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃▃▃</span></td>
+				</tr>
+				<tr>
+					<td>基因治疗</td>
+					<td>2012</td>
+					<td align=right>3.6</td>
+					<td><b>2019</b></td>
+					<td>2020</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂</span></td>
+				</tr>
+				<tr>
+					<td>皮肤病</td>
+					<td>2012</td>
+					<td align=right>3.4</td>
+					<td><b>2019</b></td>
+					<td>2020</td>
+					<td><span style="color:#CFECEC"></span><span style="color:#46C7C7">▂▂▂▂▂▂▂</span><span
+							style="color:#FF0000">▃▃</span><span style="color:#46C7C7">▂▂</span></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+	</html>
+
+	<!-- 孤儿药 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<h1 id="gueryao">孤儿药</h1>
+	</div>
+	<div style="margin-left:10%;padding:1px 16px;height:auto;">
+		<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+		<div id="main4" style="width: 49%;height:300px;">
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var chartDom4 = document.getElementById('main4');
+				var myChart4 = echarts.init(chartDom4);
+				var option4;
+				option4 = {
+					title: {
+						text: 'FDA孤儿药数量与占比',
+						left: 'center',
+						textStyle: {
+							fontSize: 16
+						}
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'cross',
+							crossStyle: {
+								color: '#999'
+							}
+						}
+					},
+					toolbox: {
+						feature: {
+							dataView: { show: true, readOnly: false },
+							magicType: { show: true, type: ['line', 'bar'] },
+							restore: { show: true },
+							saveAsImage: { show: true }
+						}
+					},
+					legend: {
+						data: ['全年孤儿药数量', '孤儿药占比'],
+						top: 'bottom'
+					},
+					xAxis: [
+						{
+							type: 'category',
+							data: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+							axisPointer: {
+								type: 'shadow'
+							}
+						}
+					],
+					yAxis: [
+						{
+							type: 'value',
+							name: '数量',
+							min: 0,
+							max: 40,
+							interval: 5,
+							axisLabel: {
+								formatter: '{value} 个'
+							}
+						},
+						{
+							type: 'value',
+							name: '比例',
+							tooltip: {
+								valueFormatter: function (value) {
+									return value + ' %';
+								}
+							},
+							min: 0,
+							max: 70,
+							interval: 10,
+							axisLabel: {
+								formatter: '{value} %'
+							}
+						}
+					],
+					series: [
+						{
+							name: '全年孤儿药数量',
+							type: 'bar',
+							tooltip: {
+								valueFormatter: function (value) {
+									return value + ' 个';
+								}
+							},
+							data: [
+								6, 11, 13, 9, 17, 21, 9, 18, 34, 21, 31
+							]
+						},
+						{
+							name: '孤儿药占比',
+							type: 'line',
+							yAxisIndex: 1,
+							tooltip: {
+								valueFormatter: function (value) {
+									return value + '%';
+								}
+							},
+							data: [28.6, 36.7, 33.3, 33.3, 41.5, 46.7, 40.9, 39.1, 60.7, 43.8, 58.5]
+						}
+					]
+				};
+				option4 && myChart4.setOption(option4);
+			</script>
+		</div>
+		<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+		<div id="main5" style="width: 49%;height:300px;">
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var chartDom5 = document.getElementById('main5');
+				var myChart5 = echarts.init(chartDom5);
+				var option5;
+				option5 = {
+					title: {
+						text: 'FDA孤儿药资格&适应症',
+						left: 'center',
+						textStyle: {
+							fontSize: 16
+						}
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'cross',
+							crossStyle: {
+								color: '#999'
+							}
+						}
+					},
+					toolbox: {
+						feature: {
+							dataView: { show: true, readOnly: false },
+							magicType: { show: true, type: ['line', 'bar'] },
+							restore: { show: true },
+							saveAsImage: { show: true }
+						}
+					},
+					legend: {
+						data: ['孤儿药资格', '孤儿药适应症'],
+						top: 'bottom'
+					},
+					xAxis: [
+						{
+							type: 'category',
+							data: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+							axisPointer: {
+								type: 'shadow'
+							}
+						}
+					],
+					yAxis: [
+						{
+							type: 'value',
+							name: '数量',
+							min: 0,
+							max: 600,
+							interval: 100,
+							axisLabel: {
+								formatter: '{value} '
+							}
+						}
+
+					],
+					series: [
+						{
+							name: '孤儿药资格',
+							type: 'line',
+							tooltip: {
+								valueFormatter: function (value) {
+									return value + '个';
+								}
+							},
+							data: [72, 84, 66, 100, 138, 128, 158, 124, 172, 173, 207, 204, 205, 277, 300, 364, 347, 486, 342, 340, 476,]
+						},
+						{
+							name: '孤儿药适应症',
+							type: 'line',
+							tooltip: {
+								valueFormatter: function (value) {
+									return value + '个';
+								}
+							},
+							data: [14, 6, 13, 12, 14, 20, 24, 16, 17, 20, 15, 26, 26, 34, 52, 49, 41, 82, 95, 76, 90]
+						}
+					]
+				};
+				option5 && myChart5.setOption(option5);
+			</script>
+		</div>
+	</div>
+	<!-- 310px -->
+	<div class="clear"></div>
+	<!-- 相关政策 -->
+	<div style="margin-left:10%;padding:1px 16px;height: auto;">
+		<div class="clear"></div>
+		<h1 id="xiangguanzhengce">相关政策</h1>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							目前，国内（大陆）罕见病仍缺乏明确的定义，而多年来国家政府层面对罕见病领域的关注与支持力度日益渐强。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp;
+							&nbsp;&nbsp;<strong>2017年前：</strong></span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2007年：《药品注册管理办法》（局令第28号）</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							《药品注册管理办法》第32条规定：罕见病、特殊病种等情况，要求减少临床试验病例数或者免做临床试验的，应当在申请临床试验时提出，并经国家食品药品监督管理局审查批准。同时，第45条明确对于“治疗艾滋病、恶性肿瘤、罕见病等疾病且具有明显临床治疗优势的新药”可以实行特殊审批。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2009年：《新药注册特殊审批管理规定》</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							对于《药品注册管理办法》的“特殊审批”进行了具体说明：针对罕见病，规定国家食品药品监督管理局药品审评中心应在收到特殊审批申请后20日内组织专家会议进行审查确定。申请特殊审批的申请人，在申报临床试验、生产时，均应制定相应的风险控制计划和实施方案。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2013年：《关于深化药品审评审批改革进一步鼓励创新的意见》</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							鼓励以临床价值为导向的药物创新，再一次重申“对重大疾病、罕见病、老年人和儿童疾病具有更好治疗作用、具有自主知识产权和列入国家科技计划重大专项的创新药物注册申请等，给予加快审评”。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							同时，这一文件明确仿制药优先审评领域——针对仿制药注册申请，属于临床供应不足、市场竞争不充分、影响公众用药可及性和可负担性的药品，儿童用药、罕见病用药等特殊人群用药，以及其他经上市价值评估确认为临床急需的药品，实行优先审评。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2015年：《国家食品药品监督管理总局关于药品注册审评审批若干政策的公告》（第230号）</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							明确“防治艾滋病、恶性肿瘤、重大传染病和罕见病等疾病的创新药注册申请”可实行单独排队，加快审评审批。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2016年：卫计委成立首个国家级罕见病诊疗与保障专家委员会</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							1月4日，中华人民共和国国家卫生和计划生育委员会官网发布消息称：为加强罕见病管理，促进罕见病规范化诊疗，保障罕见病用药基本需求，维护罕见病患者的健康权益，国家卫生计生委组建了国家卫生计生委罕见病诊疗与保障专家委员会。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							专家委员会的工作职责是：研究提出符合我国国情的罕见病定义和病种范围，组织制定罕见病防治有关技术规范和临床路径，对罕见病的预防、筛查、诊疗、用药、康复及保障等工作提出建议。专家委员会自发文之日起任期3年。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2016年2月，上海市卫生和计划生育委员会根据本市实际情况，制定了包含56种疾病的罕见病目录，明确各疾病的诊断方法和主要治疗原则。同年9月，上海四叶草罕见病家庭关爱中心（对外又称罕见病发展中心（CORD））特别发布了民间版《中国罕见病参考名录》，共有147项病种。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">​</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							<strong>2017年：</strong></span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年2月初国务院办公厅印发《关于进一步改革完善药品生产流通使用政策的若干意见》（以下简称《意见》）。《意见》中强调到要借鉴国际先进经验，探索按罕见病、儿童、老年人、急（抢）救用药及中医药（经典方）等分类审评审批，保障儿童、老年人等人群和重大疾病防治用药需求。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年“两会”期间，更多的委员或代表为罕见病提案，呼吁加大对罕见病或孤儿药研发的支持力度，及时出台相关的鼓励措施。至5月11日国家药监总局(CFDA)发布《关于鼓励药品医疗器械创新加快新药医疗器械上市审评审批的相关政策》的征求意见稿，其中明确指出“支持罕见病治疗药物和医疗器械研发。由卫生计生部门公布罕见病目录，建立罕见病患者注册登记制度。罕见病治疗药物和医疗器械申请人可提出减免临床试验申请，加快罕见病用药医疗器械审评审批。对于国外已批准上市的罕见病治疗药物和医疗器械，可有条件批准上市，上市后在规定时间内补做相关研究。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年6月2日，国家科技管理信息系统公共服务平台官网发布了“关于国家重点研发计划‘精准医学研究’和‘生殖健康及重大出生缺陷防控研究’重点专项2017年度项目安排公示的通知”，其中在“精准医学研究”重点项目专项拟立项中“中国重大疾病与罕见病临床与生命组学数据库”（序号19），中央财政经费达4977万元。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年10月，CDE发布了《接受境外临床试验数据的技术要求》：对于用于危重疾病、罕见病、儿科用药且缺乏有效治疗手段的药品注册申请，经评估其境外临床试验数据属于“部分接受”情形的，可采用有条件接受临床试验数据方式，在药品上市后收集进一步的有效性和安全性数据用于评价。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年10月，中共中央办公厅、国务院办公厅印发《关于深化审评审批制度改革鼓励药品医疗器械创新的意见》，提出了36条具体改革措施，其中包括罕见病治疗药品医疗器械一系列鼓励政策，如可附带条件批准上市等。此次出台的《意见》特别提到：“罕见病治疗药品医疗器械注册申请人可提出减免临床试验的申请。对境外已批准上市的罕见病治疗药品医疗器械，可附带条件批准上市，企业应制定风险管控计划，按要求开展研究。”</span></span></span></span>
+		</p>
+		<p>
+			<br>
+			&nbsp;
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;<strong>
+								2018年：</strong></span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2018年2月国家食品药品监督管理总局医疗器械技术审评中心发布《防治罕见病相关医疗器械审查指导原则》（征求意见稿）公开征求意见的通知</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2018年4月，国务院办公厅发布《关于改革完善仿制药供应保障及使用政策的意见》，其中也明确指出“以需求为导向，鼓励仿制临床必需、疗效确切、供应短缺的药品，鼓励仿制重大传染病防治和罕见病治疗所需药品、处置突发公共卫生事件所需药品、儿童使用药品以及专利到期前一年尚没有提出注册申请的药品。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2018年5月国家卫生健康委员会、科学技术部、工业和信息化部、国家药品监督管理局、国家中医药管理局等5部门联合发布《第一批罕见病目录》，共121种。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2018年5月《国家药品监督管理局国家卫生健康委员会关于优化药品注册审评审批有关事宜的公告（2018年第23号）》中强调到“对防治严重危及生命且尚无有效治疗手段疾病以及罕见病药品，国家食品药品监督管理总局药品审评中心（以下简称药审中心）建立与申请人之间的沟通交流机制，加强对药品研发的指导，对纳入优先审评审批范围的注册申请，审评、检查、审批等各环节优先配置资源，加快审评审批。”“对于境外已上市的防治严重危及生命且尚无有效治疗手段疾病以及罕见病药品，进口药品注册申请人经研究认为不存在人种差异的，可以提交境外取得的临床试验数据直接申报药品上市注册申请。对于本公告发布前已受理并提出减免临床试验的上述进口药品临床试验申请，符合《药品注册管理办法》及相关文件要求的，可以直接批准进口。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2018年6月，医政医管局公布了《关于印发罕见病目录制订工作程序的通知》罕见病目录制订工作程序共十七条内容，包括两附件。</span></span></span><br>
+				&nbsp;
+		</p>
+		<p>
+			<span style="color:#000000"><span style="font-size:16px"><span style="font-family:微软雅黑">&nbsp;
+						&nbsp; &nbsp; &nbsp; 2018年6月20日国</span></span></span><span style="line-height:2"><span
+					style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">务院总理李克强主持召开国务院常务会议，会议确定，“要有序加快境外已上市新药在境内上市审批。对治疗罕见病的药品和防治严重危及生命疾病的部分药品简化上市要求，可提交境外取得的全部研究资料等直接申报上市，监管部门分别在3个月、6个月内审结。”“加强全国短缺药品供应保障监测预警，建立短缺药品及原料药停产备案制度，加大储备力度，确保患者用药不断供。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp;
+							&nbsp;2018年6月22日下午，在国务院政策例行吹风会上国家药品监督管理局局长焦红介绍加快境外上市新药审评审批有关工作情况，并答记者问，其中也指出”罕见病用药、临床急需的，缺乏有效手段的相关急需药品，按照国务院会议精神，我们准备加快审批。我们按照相关的要求，科学审评、简化相关程序，像罕见病、临床急需、媒体关注的抗艾滋病、抗肿瘤等相关药品，我们纳入优先审批通道，加快审批。我们预计这些产品能够缩短1-2年时间进入中国市场，更好地满足中国患者的需求。</span></span></span></span><span
+				style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="font-family:微软雅黑体,tahoma,arial,sans-serif; font-size:16px">&nbsp;
+				&nbsp; &nbsp; </span><span style="color:#000000"><span
+					style="font-family:微软雅黑体,tahoma,arial,sans-serif; font-size:16px"><span
+						style="line-height:1.7"><span style="font-family:微软雅黑">2018</span></span></span><span
+					style="line-height:1.7"><span style="font-family:微软雅黑"><span style="font-size:16px">年</span><span
+							style="font-size:16px">7</span><span style="font-size:16px">月</span><span
+							style="font-size:16px">10</span><span
+							style="font-size:16px">日，国家药品监督管理局发布《接受药品境外临床试验数据的技术指导原则》（简称《指导原则》）。《指导原则》中指出“对于用于危重疾病、罕见病、儿科且缺乏有效治疗手段的药品注册申请，经评估其境外临床试验数据属于</span><span
+							style="font-size:16px">‘</span><span style="font-size:16px">部分接受</span><span
+							style="font-size:16px">’</span><span
+							style="font-size:16px">情形的，可采用有条件接受临床试验数据方式，在药品上市后收集进一步的有效性和安全性数据用于评价。</span><span
+							style="font-size:16px">”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="color:#000000"><span style="line-height:1.7"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;
+							&nbsp;2018年11月1日，国家药品监督管理局药品审评中心发布《第一批临床急需境外新药名单》，40个临床急需境外新药进入该名单。从给出名单详细内容可知，这40个新药多是治疗罕见病的药物，如治疗多中心卡斯特莱曼病的Siltuximab（活性成分，下同）、治疗多发性硬化症的Fingolimod
+							Hcl Ora Lcapsules、 治疗戈谢病的Eliglustat等。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="color:#000000"><span style="line-height:1.7"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							<strong>2019年</strong></span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp; &nbsp;2019年2月11日，
+							国务院总理李克强主持召开国务院常务会议，听取2018年全国两会建议提案办理工作汇报，推进提升政府施政水平；要求狠抓今年脱贫攻坚任务落实，为打赢脱贫攻坚战奠定坚实基础；部署加强癌症早诊早治和用药保障的措施，决定对罕见病药品给予增值税优惠；决定支持商业银行多渠道补充资本金，增强金融服务实体经济和防风险能力。从3月1日起，对首批21个罕见病药品和4个原料药，参照抗癌药对进口环节减按3%征收增值税，国内环节可选择按3%简易办法计征增值税。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							2019年2月12日，国卫办医函{2019}157号：为加强我国罕见病管理，提高罕见病诊疗水平，维护罕见病患者健康权益，我委决定建立全国罕见病诊疗协作网事项通知。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							2月，卫健委发布了《国家卫生健康委办公厅关于建立全国罕见病诊疗协作网的通知》，明确保障药品供应、开展病例登记、加强临床研究等工作任务，并公布了《第一批罕见病诊疗协作网医院名单》。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							2月，财政部等四部门发布了《关于罕见病药品增值税政策的通知》，包括《罕见病药品清单（第一批）》（21个罕见病药品和4个原料药），“自2019年3月1日起，对进口罕见病药品，减按3%征收进口环节增值税。并要求罕见病药品范围实行动态调整”。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							2月，《国家卫生健康委办公厅关于印发罕见病诊疗指南（2019年版）的通知》，内容包括《第一批罕见病目录》中121种罕见病的概述、病因和流行病学、临床表现、辅助检查、诊断治疗等。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							5月，CDE正式发布《第二批临床急需境外新药名单》，共包含26个品种，其中18种与罕见病有关的用药（不限于“121目录”）。7月，中共中央、国务院印发了《“健康中国2030”规划纲要》，明确要完善罕见病用药保障政策。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							8月，十三届全国人大常委会第十二次会议表决通过新修订的药品管理法，其中强调“对临床急需的短缺药、防治重大传染病和罕见病等疾病的新药、儿童用药开设绿色通道，优先审评审批”，该法于2019年12月1日起施行。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							9月发改委、教育部、科技部等21部门制定了《促进健康产业高质量发展行动纲要（2019-2022年）》（以下简称《纲要》）。《纲要》指出“对临床急需的新药和罕见病用药予以优先审评审批。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							10月，国家卫生健康委办公厅发布《第一批鼓励仿制药品目录》，指出“各相关部门要按照有关规定，在临床试验、关键共性技术研究、优先审评审批等方面予以支持。”涉及结节性硬化症、重症肌无力等疾病治疗药物，如尼替西农、溴吡斯的明、曲前列尼尔、波生坦、氨己烯酸。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							10月，医政医管局发布了《国家卫生健康委办公厅关于开展罕见病病例诊疗信息登记工作的通知》，包含“中国罕见病诊疗服务信息系统工作管理方案”等五份文件，要求各地重视罕见病病例诊疗信息登记工作，并做好组织管理、信息登记和日常管理，“对2019年11月1日起新诊断病例，应当发现一例，登记一例。”</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							11月，CDE发布关于《突破性治疗药物工作程序》和《优先审评审批工作程序》征求意见的通知，进一步强调要明确该通道纳入范围、程序、支持政策、终止程序等要求。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							11月，国家医疗保障局、人力资源和社会保障部印发了“关于将2019年谈判药品纳入《国家基本医疗保险、工伤保险和生育保险药品目录》乙类范围的通知”。同时，医保局还在网站上公布了“2019年国家医保谈判准入药品名单”、“通知的政策解读”。此次目录调整中，在罕见病用药方面，新增药品中有9个，续约药品中有2个，涉及尼曼匹克病、（特发性）肺动脉高压、多发性硬化、结节性硬化症、血友病、地中海贫血、克罗恩病和原发性骨髓纤维化等（不限于“121目录”）。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							11月，佛山市医疗保障局发布佛山市医疗保障局关于征求《佛山市医疗救助办法（征求意见稿）》意见的公告，第一批《罕见病目录》中的121种罕见病被纳入医疗救助范围，符合相关条件者，年度最高救助限额为30万元。</span></span></span></span>
+		</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="line-height:1.7"><span style="color:#000000"><span style="font-family:微软雅黑"><span
+							style="font-size:16px">&nbsp; &nbsp; &nbsp;&nbsp;
+							12月，浙江省医保局发布《关于建立浙江省罕见病用药保障机制的通知》，按照“以收定支、量力而行、循序渐进”的原则，决定建立浙江省罕见病用药保障机制。“实行费用累加计算分段报销，个人负担封顶。0—30万元，报销比例为80%；30—70万元，报销比例为90%；70万元以上费用，全额予以报销。”&nbsp;</span></span></span></span>
+		</p>
+	</div>
+	<!-- 3500px -->
+	<div class="clear"></div>
+	<!-- 国际罕见病日历程 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<h1 id="guojihanjianbingrilicheng">国际罕见病日</h1>
+	</div>
+	<div style="margin-left:10%;padding:1px 16px;height:auto;">
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							1997年，欧洲罕见病组织成立，是在欧盟各成员国、企业基金会、健康机构等支持下，由罕见病患者组织及罕见病领域的爱心人士组成的非政府组织，其宗旨是改善欧洲罕见病患者的生命质量。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p id="infoimg1" style="margin-right: 10px;"><img
+				src="http://img.mp.itc.cn/upload/20170208/7059f9d38d174f65bf55c76103085b33.jpg"
+				style="height: 285px;" />
+		</p>
+
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第一届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2008年2月29日，在20个欧洲国家的积极参与下，首届国际罕见病日纪念活动在欧洲各国成功举行，通过各种活动促进了社会对罕见病的认识。一些国家政府也积极参与，强烈呼吁社会认识罕见疾病，敦促制药企业研制罕见病治疗药物。第一届国际罕见病日得到了国际上许多国家的积极响应。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第二届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2009年2月28日，欧洲、北美、拉丁美洲、中国等30多个国家的罕见病组织参加了第二个国际罕见病日的活动，其主题为社会各方联合起来，提高公众对罕见疾病的认识，了解罕见病对患者生活的影响，为患者提供医疗信息，协调各国罕见病政策制定活动，促进罕见病患者获得关爱和治疗。其后在各国的一致拥护下，将每年2月的最后一天定为国际罕见病日。
+						</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第三届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2010年2月28日，为第三届国际罕见病日。2010年国际罕见病日的主题——患者和研究者
+							生命的伙伴（PatientsandResearchers:PartnersforLife），科学研究是千百万身患尚无治疗方法的罕见病患者的希望。在过去的10余年中，国际上在遗传学及医学技术方面取得了许多重大进展，科学研究和治疗方法的进步使罕见病患者看到很大希望。然而现有的罕见病的公共科研项目还不够，有特效治疗药物的罕见病种类也不多，罕见病患者的人数及进行罕见病科学研究的人数均很少，使得已有科学进步的价值难以扩大。
+						</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第四届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2011年2月28日，为第四届国际罕见病日。2011年国际罕见病日的主题——罕见，但平等（Rare,butEqual），不同国家和同一国家内部不同地区之间罕见病患者存在的健康差距，以及罕见病患者同其他社会成员之间存在的健康差距。倡导罕见疾病患者平等地获得医疗保健和社会服务，平等地享有健康，教育，就业，住房等基本社会权利，平等地获得孤儿药和治疗。
+						</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p id="infoimg2" style="margin-right: 10px;"><img
+				src="http://img.mp.itc.cn/upload/20170208/b3e00f7b684949168a1a549d49989f82.jpg"
+				style="height: 280px;" />
+		</p>
+
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第五届国际罕见病日</span></span></span></span>
+		</p>
+
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2012年2月29日，为第五届国际罕见病日。国际罕见病日中国区合作伙伴瓷娃娃罕见病关爱中心联合中国近20家各类罕见病组织，共同发起“改变从了解开始”国际罕见病日中国区宣传月活动，呼吁社会公众、政府部门关注罕见病以及罕见病群体面临的困境，号召各类罕见病组织、罕见病群体间加强合作。
+						</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第六届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2013年2月28日是第六届国际罕见病日，主题是“RareDiseaseswithoutBorders”罕见病无国界。中国罕见疾病防治联盟在山东省医学科学院正式成立。然而现有的罕见病的公共科研项目还不够，有特效治疗药物的罕见病种类也不多，罕见病患者的人数及进行罕见病科学研究的人数均很少，使得已有科学进步的价值难以扩大。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第七届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2014年国际罕见病日主题“为病患提供更好照护”。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第八届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2015年国际罕见病日主题“改变从了解开始”。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第九届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2016年国际罕见病日宣传主题是：“从不罕见”。浙江省医学会罕见病分会成立，北京医学会罕见病分会发布科普宣传片。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							第十届国际罕见病日</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2017年国际罕见病日，罕见病志愿者联盟组织“万人健走世园会推动健康中国梦” 京津冀罕见病大型公益健走活动。</span></span></span></span>
+		</p>
+	</div>
+	<!-- 1450px -->
+	<div class="clear"></div>
+	<!-- 关注罕见病 -->
+	<div style="margin-left:10%;padding:1px 16px;">
+		<h1 id="guanzhuhanjianbing">关注罕见病</h1>
+	</div>
+	<div style="margin-left:10%;padding:1px 16px;height:auto;">
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							1.早期发现、早期干预是罕见病防治的最佳途径。应积极开展罕见病的宣传及科学知识的普及，组织相关医学培训，提高我国罕见病的发现和诊断水平，减少因误诊、漏诊造成的疾病干预与治疗时机的延误。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							2.罕见病常为先天性、慢性、消耗性疾病，疾病给患者和其家庭造成的痛苦巨大，罕见病患者和其家庭亟需社会给予生活、医疗、心理等多方面支持。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							3.由于身有残疾，罕见病患者在生活和就学、就业中常遭遇歧视现象，应提倡更和谐的社会环境，使罕见病患者得到全社会的理解和关爱，并为罕见病患者入学、就业提供支持和帮助。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							4.由于罕见病药物研发费用昂贵、风险巨大、市场需求量小，多数制药企业不愿进行开发，社会应支持政府制定特殊的罕见病药物研发激励政策，促进更多的罕见病获得有效治疗方法。</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp;</span></span></span></span>
+		</p>
+		<p>
+			<span style="line-height:2"><span style="color:#000000"><span style="font-size:16px"><span
+							style="font-family:微软雅黑">&nbsp; &nbsp; &nbsp; &nbsp;
+							5.国际上仅有约1%的罕见病有特效的治疗方法，而在我国注册的罕见病药物微乎其微。由于研发过程耗资巨大，罕见病的有效治疗药物价格昂贵，多数患者家庭无力支付。社会各界应动员起来，帮助政府制定行之有效的付费机制，使罕见病患者获得可持续的医疗保障。</span></span></span></span>
+		</p>
+	</div>
+	<!-- 500px -->
+	<div class="clear"></div>
+</body>
+
+</html>
+{% endblock %}

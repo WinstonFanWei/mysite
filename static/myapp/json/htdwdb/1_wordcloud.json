@@ -1,0 +1,44 @@
+[
+    {
+        "name": "张宝荣",
+        "value": 6,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+    {"name": "李晓文","value": 4},
+    {"name": "秦正红","value": 4},
+    {"name": "殷鑫浈","value": 4},
+    {"name": "田均","value": 4},
+    {"name": "肖海","value": 3},
+    {"name": "雷晶","value": 3},
+    {"name": "李清华","value": 3},
+    {"name": "夏昆","value": 3},
+    {"name": "刘涛","value": 2},
+    {"name": "张艳","value": 2},
+    {"name": "刘畅","value": 2},
+    {"name": "王婷","value": 2},
+    {"name": "陈静","value": 2},
+    {"name": "陈晓蕾","value": 2},
+    {"name": "程嘉华","value": 2},
+    {"name": "陈辉","value": 2},
+    {"name": "夏家辉","value": 2},
+    {"name": "马建华","value": 2},
+    {"name": "李潇","value": 2},
+    {"name": "姜楠","value": 2},
+    {"name": "周璐","value": 2},
+    {"name": "静雨","value": 2},
+    {"name": "张小宁","value": 2},
+    {"name": "唐北沙","value": 2},
+    {"name": "顾振纶","value": 2},
+    {"name": "林芳","value": 2}
+
+
+]
+
+

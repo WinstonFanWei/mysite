@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Goldstein JL",
+        "value": 53,
+        "textStyle": {
+            "color": "black"
+        },
+        "emphasis": {
+            "textStyle": {
+                "color": "red"
+            }
+        }
+    },
+{"name": "Brown MS","value": 52},
+{"name": "Raal FJ","value": 50},
+{"name": "Al-Qahtani M","value": 41},
+{"name": "Harada-Shiba M","value": 36},
+{"name": "Yamamoto A","value": 34},
+{"name": "Thompson GR","value": 34},
+{"name": "Watts GF","value": 33},
+{"name": "Rader DJ","value": 32},
+{"name": "Bruckert E","value": 31},
+{"name": "Assidi M","value": 28},
+{"name": "Hovingh GK","value": 28},
+{"name": "Stefanutti C","value": 28},
+{"name": "Marais AD","value": 28},
+{"name": "Kastelein JJ","value": 25},
+{"name": "Defesche JC","value": 24},
+{"name": "Bertolini S","value": 24},
+{"name": "Humphries SE","value": 24},
+{"name": "Soutar AK","value": 23},
+{"name": "Santos RD","value": 22},
+{"name": "et al.","value": 20},
+{"name": "Bilheimer DW","value": 20},
+{"name": "Hoeg JM","value": 20},
+{"name": "Hegele RA","value": 19},
+{"name": "Arca M","value": 19},
+{"name": "Mabuchi H","value": 19},
+{"name": "Blom DJ","value": 18},
+{"name": "Al-Qahtani MH","value": 18},
+{"name": "Pushparaj PN","value": 18},
+{"name": "Calandra S","value": 18},
+{"name": "Wiegman A","value": 18},
+{"name": "Gaudet D","value": 17},
+{"name": "Stein EA","value": 17},
+{"name": "Abu-Elmagd M","value": 17},
+{"name": "Wilson JM","value": 17},
+{"name": "Mathew S","value": 17},
+{"name": "Wang L","value": 16},
+{"name": "Cuchel M","value": 16},
+{"name": "Nohara A","value": 15},
+{"name": "Rasool M","value": 15},
+{"name": "Masana L","value": 15},
+{"name": "Chapman MJ","value": 15},
+{"name": "Buhmeida A","value": 15},
+{"name": "Mata P","value": 15},
+{"name": "Genest J","value": 15}
+
+]

@@ -1,0 +1,546 @@
+{% extends "myapp/base.html" %}
+
+{% block mycontent %}
+<script>
+    var cla = $("#_dis_index").attr("class", "active");
+</script>
+<div class="bottom-grids">
+    <!-- 0-C -->
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">已研究</h3>
+            <ul>
+                <li><a href="dis_info?name=chzxjzxgdgcxz" target='_blank'>纯合子型家族性高胆固醇血症</a></li>
+                <li><a href="dis_info?name=htdwdb" target='_blank'>亨廷顿舞蹈病</a></li>
+                <li><a href="dis_info?name=jsxjwsz" target='_blank'>脊髓性肌萎缩症</a></li>
+            </ul>
+            <ul onmouseover="dispa()" onmouseout="outa()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+            </ul>
+            <script type="text/javascript">
+                function dispa() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('a')[i].style.display = 'block';
+                    }
+                }
+                function outa() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('a')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">符号 & A & B</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href="dis_info?name=21qhmqfz" target='_blank'>21-羟化酶缺乏症</a></li>
+                <li><a href="dis_info?name=Alportzhz" target='_blank'>Alport综合征</a></li>
+                <li><a href="dis_info?name=Angelman" target='_blank'>Angelman氏症候群(天使综合征)</a></li>
+            </ul>
+            <ul onmouseover="dispb()" onmouseout="outb()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="b" style="display: none;"><a href="dis_info?name=bhb" target="_blank">白化病</a></li>
+                <li class="b" style="display: none;"><a href="dis_info?name=brtxz" target="_blank">半乳糖血症</a></li>
+                <li class="b" style="display: none;"><a href="dis_info?name=bbtnz" target="_blank">苯丙酮尿症</a></li>
+                <li class="b" style="display: none;"><a href="dis_info?name=betatljmqfz" target="_blank">β-酮硫解酶缺乏症</a></li>
+                <li class="b" style="display: none;"><a href="dis_info?name=bsxz" target='_blank'>丙酸血症</a></li>
+                <li class="b" style="display: none;"><a href="dis_info?name=blb" target='_blank'>卟啉病</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispb() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('b')[i].style.display = 'block';
+                    }
+                }
+                function outb() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('b')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid1 bottom-last"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">C</h3>
+            <ul>
+                <li><a href='dis_info?name=cgbqz' target='_blank'>成骨不全症（脆骨病）</a></li>
+                <li><a href="dis_info?name=chzxjzxgdgcxz" target="_blank">纯合子型家族性高胆固醇血症</a></li>
+                <li><a href="dis_info?name=Castlemanb" target="_blank">Castleman病</a></li>
+            </ul>
+            <ul onmouseover="dispc()" onmouseout="outc()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="c" style="display: none;"><a href="dis_info?name=cl3" target="_blank">长链3-羟酰基辅酶A脱氢酶缺乏症</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                function dispc() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('c')[i].style.display = 'block';
+                    }
+                }
+                function outc() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('c')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    <div class="clear"> </div>
+    <!-- D-G -->
+    <div class="clear"> </div>
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">D & E</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href="#" target="_blank">低碱性磷酸酶血症</a></li>
+                <li><a href="#" target="_blank">低磷性佝偻病</a></li>
+                <li><a href='#' target='_blank'>多发性硬化</a></li>
+            </ul>
+            <ul onmouseover="dispd()" onmouseout="outd()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="d" style="display: none;"><a href="{% url 'info' %}" target="_blank">多系统萎缩</a></li>
+                <li class="d" style="display: none;"><a href="{% url 'info' %}" target="_blank">多灶性运动神经病</a></li>
+                <li class="d" style="display: none;"><a href="{% url 'info' %}" target="_blank">多种酰基辅酶A脱氢酶缺乏症</a></li>
+                <li class="d" style="display: none;"><a href="{% url 'info' %}" target="_blank">Erdheim-Chester病</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                function dispd() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('d')[i].style.display = 'block';
+                    }
+                }
+                function outd() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('d')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">F</h3>
+            <ul>
+                <li><a href='#' target='_blank'>法布雷病</a></li>
+                <li><a href='#' target='_blank'>范可尼贫血</a></li>
+                <li><a href='#' target='_blank'>非典型溶血性尿毒症</a></li>
+            </ul>
+            <ul onmouseover="dispe()" onmouseout="oute()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="e" style="display: none;"><a href="{% url 'info' %}" target="_blank">非综合征性耳聋</a></li>
+                <li class="e" style="display: none;"><a href="{% url 'info' %}" target="_blank">腓骨肌萎缩症</a></li>
+                <li class="e" style="display: none;"><a href="{% url 'info' %}" target="_blank">肺囊性纤维化</a></li>
+                <li class="e" style="display: none;"><a href="{% url 'info' %}" target="_blank">肺泡蛋白沉积症</a></li>
+                <li class="e" style="display: none;"><a href="{% url 'info' %}" target="_blank">枫糖尿症</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispe() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('e')[i].style.display = 'block';
+                    }
+                }
+                function oute() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('e')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid1 bottom-last"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">G</h3>
+            <ul>
+                <li><a href='#' target='_blank'>肝豆状核变性</a></li>
+                <li><a href='#' target='_blank'>高苯丙氨酸血症</a></li>
+                <li><a href='#' target='_blank'>戈谢病</a></li>
+            </ul>
+            <ul onmouseover="dispf()" onmouseout="outf()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="f" style="display: none;"><a href="{% url 'info' %}" target="_blank">谷固醇血症</a></li>
+                <li class="f" style="display: none;"><a href="{% url 'info' %}" target="_blank">瓜氨酸血症</a></li>
+                <li class="f" style="display: none;"><a href="{% url 'info' %}" target="_blank">冠状动脉扩张病</a></li>
+                <li class="f" style="display: none;"><a href="{% url 'info' %}" target="_blank">Gitelman综合征</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispf() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('f')[i].style.display = 'block';
+                    }
+                }
+                function outf() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('f')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    <div class="clear"> </div>
+    <!-- H-L -->
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">H & I</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href='#' target='_blank'>黑斑息肉综合征</a></li>
+                <li><a href="dis_info?name=htdwdb" target='_blank'>亨廷顿舞蹈病</a></li>
+                <li><a href='#' target='_blank'>HHH综合征</a></li>
+            </ul>
+            <ul onmouseover="dispg()" onmouseout="outg()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="g" style="display: none;"><a href="{% url 'info' %}" target="_blank">IgG4相关性疾病</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispg() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('g')[i].style.display = 'block';
+                    }
+                }
+                function outg() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('g')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">J</h3>
+            <ul>
+                <li><a href='#' target='_blank'>肌萎缩侧索硬化</a></li>
+                <li><a href='#' target='_blank'>极长链酰基辅酶A脱氢酶缺乏症</a></li>
+                <li><a href='#' target='_blank'>脊髓小脑性共济失调</a></li>
+            </ul>
+            <ul onmouseover="disph()" onmouseout="outh()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="h" style="display: none;"><a href="dis_info?name=jsxjwsz" target="_blank">脊髓性肌萎缩症</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">脊髓延髓肌萎缩症（肯尼迪病）</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">家族性地中海热</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">甲基丙二酸血症</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">结节性硬化症</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">进行性肌营养不良</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">进行性家族性肝内胆汁淤积症</a></li>
+                <li class="h" style="display: none;"><a href="{% url 'info' %}" target="_blank">精氨酸酶缺乏症</a></li>
+            </ul>
+            <script type="text/javascript">
+                function disph() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('h')[i].style.display = 'block';
+                    }
+                }
+                function outh() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('h')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid1 bottom-last"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">K & L</h3>
+            <ul>
+                <li><a href='#' target='_blank'>卡尔曼综合征</a></li>
+                <li><a href='#' target='_blank'>莱伦氏综合征</a></li>
+                <li><a href='#' target='_blank'>赖氨酸尿蛋白不耐受症</a></li>
+            </ul>
+            <ul onmouseover="dispi()" onmouseout="outi()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="i" style="display: none;"><a href="{% url 'info' %}" target="_blank">朗格汉斯组织细胞增生症</a></li>
+                <li class="i" style="display: none;"><a href="{% url 'info' %}" target="_blank">镰刀型细胞贫血病</a></li>
+                <li class="i" style="display: none;"><a href="{% url 'info' %}" target="_blank">淋巴管肌瘤病</a></li>
+                <li class="i" style="display: none;"><a href="{% url 'info' %}" target="_blank">Leber遗传性视神经病变</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispi() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('i')[i].style.display = 'block';
+                    }
+                }
+                function outi() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('i')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    <div class="clear"> </div>
+    <!-- M-S -->
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">M & N</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href='#' target='_blank'>马凡综合征</a></li>
+                <li><a href='#' target='_blank'>McCune-Albrigh综合征</a></li>
+                <li><a href='#' target='_blank'>尼曼-匹克病</a></li>
+            </ul>
+            <ul onmouseover="dispj()" onmouseout="outj()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="j" style="display: none;"><a href="{% url 'info' %}" target="_blank">黏多糖贮积症</a></li>
+                <li class="j" style="display: none;"><a href="{% url 'info' %}" target="_blank">鸟氨酸氨甲酰基转移酶缺乏症</a></li>
+                <li class="j" style="display: none;"><a href="{% url 'info' %}" target="_blank">N-乙酰谷氨酸合成酶缺乏症</a></li>
+                <li class="j" style="display: none;"><a href="{% url 'info' %}" target="_blank">Noonan综合征</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispj() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('j')[i].style.display = 'block';
+                    }
+                }
+                function outj() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('j')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">P & Q</h3>
+            <ul>
+                <li><a href='#' target='_blank'>帕金森病（青年型、早发型）</a></li>
+                <li><a href='#' target='_blank'>POEMS综合征</a></li>
+                <li><a href='#' target='_blank'>Prader-Willi综合征</a></li>
+            </ul>
+            <ul onmouseover="dispk()" onmouseout="outk()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="k" style="display: none;"><a href="{% url 'info' %}" target="_blank">强直性肌营养不良</a></li>
+                <li class="k" style="display: none;"><a href="{% url 'info' %}" target="_blank">全身型重症肌无力</a></li>
+                <li class="k" style="display: none;"><a href="{% url 'info' %}" target="_blank">全羧化酶合成酶缺乏症</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispk() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('k')[i].style.display = 'block';
+                    }
+                }
+                function outk() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('k')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid1 bottom-last"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">R & S</h3>
+            <ul>
+                <li><a href='#' target='_blank'>热纳综合征（窒息性胸腔失养症）</a></li>
+                <li><a href='#' target='_blank'>溶酶体酸性脂肪酶缺乏症</a></li>
+                <li><a href='#' target='_blank'>生物素酶缺乏症</a></li>
+            </ul>
+            <ul onmouseover="displ()" onmouseout="outl()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">湿疹血小板减少伴免疫缺陷综合征</a></li>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">视神经脊髓炎</a></li>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">视网膜母细胞瘤</a></li>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">视网膜色素变性</a></li>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">四氢生物蝶呤缺乏症</a></li>
+                <li class="l" style="display: none;"><a href="{% url 'info' %}" target="_blank">Silver-Russell综合征</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                function displ() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('l')[i].style.display = 'block';
+                    }
+                }
+                function outl() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('l')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    <div class="clear"> </div>
+    <!-- T-X -->
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">T</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href='#' target='_blank'>糖原累积病(I型、Ⅱ型)</a></li>
+                <li><a href='#' target='_blank'>特发性低促性腺激素性性腺功能减退症</a></li>
+                <li><a href='#' target='_blank'>特发性肺动脉高压</a></li>
+            </ul>
+            <ul onmouseover="dispm()" onmouseout="outm()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="m" style="display: none;"><a href="{% url 'info' %}" target="_blank">特发性肺纤维化</a></li>
+                <li class="m" style="display: none;"><a href="{% url 'info' %}" target="_blank">特发性心肌病</a></li>
+                <li class="m" style="display: none;"><a href="{% url 'info' %}" target="_blank">同型半胱氨酸血症</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispm() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('m')[i].style.display = 'block';
+                    }
+                }
+                function outm() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('m')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">W</h3>
+            <ul>
+                <li><a href='#' target='_blank'>威廉姆斯综合征</a></li>
+                <li><a href='#' target='_blank'>戊二酸血症I型</a></li>
+            </ul>
+            <ul onmouseover="dispz()" onmouseout="outz()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+            </ul>
+            <script type="text/javascript">
+                function dispz() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('z')[i].style.display = 'block';
+                    }
+                }
+                function outz() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('z')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid1 bottom-last"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">X</h3>
+            <ul>
+                <li><a href='#' target='_blank'>系统性硬化症</a></li>
+                <li><a href='#' target='_blank'>先天性纯红细胞再生障碍性贫血</a></li>
+                <li><a href='#' target='_blank'>先天性胆汁酸合成障碍</a></li>
+            </ul>
+            <ul onmouseover="dispn()" onmouseout="outn()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">先天性高胰岛素性低血糖血症</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">先天性肌强直（非营养不良性肌强直综合征）</a>
+                </li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">先天性肌无力综合征</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">先天性脊柱侧弯</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">先天性肾上腺发育不良</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">线粒体脑肌病</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">心脏离子通道病</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">新生儿糖尿病</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">血友病</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">X-连锁淋巴增生症</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">X-连锁肾上腺脑白质营养不良</a></li>
+                <li class="n" style="display: none;"><a href="{% url 'info' %}" target="_blank">X-连锁无丙种球蛋白血症</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispn() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('n')[i].style.display = 'block';
+                    }
+                }
+                function outn() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('n')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    <div class="clear"> </div>
+    <!-- Y-Z -->
+    <div class="wrap">
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">Y</h3>
+            <!--div class="gallery"-->
+            <ul>
+                <li><a href='#' target='_blank'>遗传性大疱性表皮松解症</a></li>
+                <li><a href='#' target='_blank'>遗传性低镁血症</a></li>
+                <li><a href='#' target='_blank'>遗传性多发脑梗死性痴呆</a></li>
+            </ul>
+            <ul onmouseover="dispo()" onmouseout="outo()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">遗传性果糖不耐受症</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">遗传性痉挛性截瘫</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">遗传性血管性水肿</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">异戊酸血症</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}"
+                        target="_blank">婴儿严重肌阵挛性癫痫(Dravet综合征)</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">原发性酪氨酸血症</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">原发性联合免疫缺陷</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">原发性轻链型淀粉样变</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">原发性肉碱缺乏症</a></li>
+                <li class="o" style="display: none;"><a href="{% url 'info' %}" target="_blank">原发性遗传性肌张力不全</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispo() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('o')[i].style.display = 'block';
+                    }
+                }
+                function outo() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('o')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <!--class="bottom-grid2 bottom-mid"-->
+        <div class="bottom-grid1">
+            <h3 style="text-align: center; border: 1px solid #000;">Z</h3>
+            <ul>
+                <li><a href='#' target='_blank'>阵发性睡眠性血红蛋白尿</a></li>
+                <li><a href='#' target='_blank'>中链酰基辅酶A脱氢酶缺乏症</a></li>
+                <li><a href='#' target='_blank'>重症先天性粒细胞缺乏症</a></li>
+            </ul>
+            <ul onmouseover="dispp()" onmouseout="outp()">
+                <a class="button" style="width: 90%;">展示更多罕见病......</a>
+                <li class="p" style="display: none;"><a href="{% url 'info' %}" target="_blank">自身免疫性垂体炎</a></li>
+                <li class="p" style="display: none;"><a href="{% url 'info' %}" target="_blank">自身免疫性脑炎</a></li>
+                <li class="p" style="display: none;"><a href="{% url 'info' %}" target="_blank">自身免疫性胰岛素受体病</a></li>
+            </ul>
+            <script type="text/javascript">
+                function dispp() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('p')[i].style.display = 'block';
+                    }
+                }
+                function outp() {
+                    for (var i = 0; i < 21; i++) {
+                        document.getElementsByClassName('p')[i].style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="clear"> </div>
+</div>
+{% endblock %}
